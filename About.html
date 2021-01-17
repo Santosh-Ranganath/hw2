@@ -4,19 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us </title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" type="text/css">
 </head>
-<body>
-    <h1>Meet the Leadership Team!</h1>
-        <p><a href="Index.html"> Go Home</a></p>
 
-       <h2>Michael Scott</h2>
-       <p>Regional Manager</p>
-       <img src="https://upload.wikimedia.org/wikipedia/en/d/dc/MichaelScott.png">
-       <p>Michael currently serves as the Regional Manager of our Scranton office. Prior to Dunder Mifflin he was a greeter at Men's Warehouse.</p>
-    
-       <h2>Dwight Schrute</h2>
-       <p>Assistant to the Regional Manager</p>
-       <img src="https://upload.wikimedia.org/wikipedia/en/c/cd/Dwight_Schrute.jpg">
-       <p>Dwight currently serves as the Assistant to the Regional Manager. Previously he was the Assistant to the Assistant to the Regional Manager. He is also an avid beet farmer.</p>
-</body>
+<!-- Start of Body -->
+<body class="bg-black">
+
+    <div>
+        <h1 class="text-center uppercase text-3xl text-white border border-blue-400 rounded m-6">Meet the Leadership Team!</h1>
+    </div>
+
+    <div class="text-white text-center text-xl m-6">
+        <p> <a class="border rounded px-4 py-2 hover:text-blue-400"href="index.html">Home</a> <a class="border rounded px-4 py-2 ml-4 hover:text-blue-400" href="Products.html">Products</a>
+        </p>
+    </div>
+
+    <div class="text-white md:flex m-6">
+
+        <Div class="md:w-1/2 border border-red-400">
+            <h2 class="uppercase text-center text-blue-500 mb-4 font-bold">Michael Scott-Regional Manager</h2>
+            <img class="mx-auto h-64 rounded mb-4"  src="https://upload.wikimedia.org/wikipedia/en/d/dc/MichaelScott.png">
+            <p class="text-center">Michael currently serves as the Regional Manager of our Scranton office. Prior to Dunder Mifflin he was a greeter at Men's Warehouse.</p>
+        </Div> 
+
+        <Div class="md:w-1/2 border border-red-400">
+            <h2 class="uppercase text-center text-blue-500 mb-4 font-bold">Dwight Schrute-<span class="underline italic text-red-500">Assistant </span> to the Regional Manager</h2>
+            <img class="mx-auto h-64 rounded mb-4" src="https://upload.wikimedia.org/wikipedia/en/c/cd/Dwight_Schrute.jpg">
+            <p class="text-center">Dwight currently serves as the Assistant to the Regional Manager. Previously he was the Assistant to the Assistant to the Regional Manager. He is also an avid beet farmer.</p>
+        </Div>
+    </div>
+
+
+    </body>
+
+
 </html>
