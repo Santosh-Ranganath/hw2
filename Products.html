@@ -4,36 +4,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Our Products</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" type="text/css">
 </head>
 
-<body>
-    <h1>Dunder Mifflin Products</h1>
-    <p><a href="Index.html"> Go Home</a></p>
+<body class="bg-black">
+    <div>
+    <h1 class="text-center uppercase text-3xl text-white border border-blue-400 rounded m-6">Dunder Mifflin Products-Order Now!</h1>
+    </div>
 
-    <table>
-        <tr>
-            <td>
-                <h3>Single Ream</h3>
+    <div class="text-white text-center text-xl m-6">
+        <p> <a class="border rounded px-4 py-2 hover:text-blue-400"href="index.html">Home</a> <a class="border rounded px-4 py-2 ml-4 hover:text-blue-400" href="About.html">About Us</a>
+        </p>
+    </div>
+
+    <Div class="text-white md:flex m-6">
+        
+            <Div class="md:w-1/2 border border-red-400">
+                <h3 class="uppercase text-center text-blue-500 mb-4 font-bold">Single Ream</h3>
                 <p>
-                <img src="https://www.quill.com/is/image/Quill/s1190686_s7?$img400$">
+                <img class="mx-auto h-64 rounded mb-4" src="https://www.quill.com/is/image/Quill/s1190686_s7?$img400$">
                 </p>
-                <ul>
-                    <li>The perfect order if you are just getting started</li>
-                    <li>$9.99</li>
-                </ul>
-            </td>
-            <td>
-                <h3>The Big Box</h3>
+                <Div class="text-center mb-4">
+                    <P>The perfect order if you are just getting started</p>
+                    <p>$9.99</p>
+                </Div>
+            </div>
+            <Div class="md:w-1/2 border border-red-400">
+                <h3 class="uppercase text-center text-blue-500 mb-4 font-bold">The Big Box</h3>
                 <p>
-                <img src="https://photos.prnewswire.com/prn/20111128/CG13237">
+                <img class="mx-auto h-64 rounded mb-4" src="https://photos.prnewswire.com/prn/20111128/CG13237">
                 </p>
-                <ul>
-                    <li>For our more advanced users</li>
-                    <li>$49.99</li>
-                 </ul>
-            </td>
-        </tr>
-    </table>
+                <div class="text-center mb-4">
+                    <P>For our more advanced users</p>
+                    <P>$49.99</p>
+                </div>
+            </div>
+    </div>
+
+    <!-- Start Form Section  -->
+   
+    <div class="text-white">
+        <h1 class="text-center text-2xl font-bold"> Place an order today using the form below!</h1>
+
+        <form netlify class="mt-8 text-center">
+            <label for="name" class="font-bold block mt-4"> Your name?</label>
+            <input type="text" id="name" name="name" class="text-black p-2 border border-blue-400 focus:outline-none 
+            focus:ring-red-500 focus:border-red-500 rounded">
+
+            <label for="email" class="font-bold block mt-4"> Email</label>
+            <input type="text" id="email" name="email" class="text-black p-2 border border-blue-400 focus:outline-none 
+            focus:ring-red-500 focus:border-red-500 rounded">
+
+            
+            <label for="order" class="font-bold block mt-4">What do you want to order?</label>
+            <textarea id="order" name="order" rows="2" class="w-1/3 text-black p-2 border border-blue-400 focus:outline-none 
+            focus:ring-red-500 focus:border-red-500 rounded"></textarea>
+
+            <button class="block mx-auto text-white bg-blue-400 rounded px-4 py-2 hover:bg-red-500">Submit form!</button>
+
+
+        </form>
+    </div>  
     
 </body>
 </html>
